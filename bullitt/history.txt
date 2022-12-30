@@ -1,0 +1,12 @@
+ 1589  cd hlf144/bullitt/
+ 1590  ./launch.sh javascript
+ 1591  cd javascript/
+ 1592  rm -R wallet
+ 1593  node enrollAdmin.js 
+ 1594  node registerUser.js 
+ 1595  node query.js 
+ 1596  shasum -a 256 query.js 
+ 1597  node createBullitt.js Christan 50626a2337a006e12b9b4524068b2aac6fe12648277e6b4e2749c12c2289c25b
+ 1598  shasum -a 256 createBullitt.js 
+ 1599  node changeOwner.js BULLITT01 Gustav c2a8b8ac2e87c3c566d1f52b0527a8e3174ba5a27bce9a4e2a06e8c99e63b8d9 100 20 10
+ 1600  node query.js 
